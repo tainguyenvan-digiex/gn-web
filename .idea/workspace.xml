@@ -27,7 +27,7 @@
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nguyenquangtam/Documents/gn-web&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tai/Documents/gn-web&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -39,7 +39,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.19072.23" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
       </set>
     </attachedChunks>
   </component>
@@ -54,6 +54,8 @@
       <workItem from="1731575328260" duration="4196000" />
       <workItem from="1731656946572" duration="10000" />
       <workItem from="1731657172565" duration="4849000" />
+      <workItem from="1731851046668" duration="5000" />
+      <workItem from="1731851072763" duration="1644000" />
     </task>
     <servers />
   </component>
