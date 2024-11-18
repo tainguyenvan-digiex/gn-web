@@ -62,10 +62,28 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const APP_STORE_URL = 'https://apps.apple.com/app/green-nation/id1671758299';
+            const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=green.greennation.app';
+            const APP_DEEP_LINK = 'greennation://';
+            const WEB_URL = 'https://store.greennation.green/app/index.html';
+
             const userAgent = window.navigator.userAgent;
             const isAndroid = /android/i.test(userAgent);
             // @ts-expect-error This is a hack to check if the user agent is iOS
             const isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            const fallbackUrl = isiOS ? APP_STORE_URL : isAndroid ? PLAY_STORE_URL : WEB_URL;
+
+            // Deep Link
+            if (isAndroid || isiOS) {
+                window.location.href = APP_DEEP_LINK;
+            } else {
+                window.location.href = APP_DEEP_LINK;
+            }
+
+            // Set a fallback to redirect to the store if the app is not installed
+            setTimeout(() => {
+                window.location.href = fallbackUrl;
+            }, 4000);
 
             // Store
             // if (isAndroid) {
@@ -76,12 +94,6 @@
             //     window.location.href = 'https://greennation.green/app/index.html';
             // }
 
-            // Deep Link
-            if (isAndroid || isiOS) {
-                window.location.href = 'greennation://';
-            } else {
-                window.location.href = 'https://greennation.green/app/index.html';
-            }
 
             // Source
             // const searchParams = new URLSearchParams(window.location.search);
